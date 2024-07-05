@@ -2,6 +2,11 @@
 
 function filterInStockProducts(products) {
   // เริ่มเขียนโค้ดตรงนี้
+  const stockProducts = products.filter((product) => {
+    return product.quantity > 0;
+  });
+
+  return stockProducts;
 }
 
 // ตัวอย่างการใช้งาน
